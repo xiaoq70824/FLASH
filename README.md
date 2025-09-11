@@ -33,7 +33,7 @@ Experimental results on three benchmark datasets demonstrate FLASH's superiority
 
 #### No-Activation Frequency Block (NAFB)
 <div align="center">
-<img width="200" height="250" alt="model_1" src="https://github.com/user-attachments/assets/9bb40e78-61b3-464c-8bac-3d481b2292a9" />
+<img width="400" height="500" alt="model_1" src="https://github.com/user-attachments/assets/9bb40e78-61b3-464c-8bac-3d481b2292a9" />
 <p><em>No-Activation Frequency Block design</em></p>
 </div>
 
