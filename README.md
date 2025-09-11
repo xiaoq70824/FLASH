@@ -122,3 +122,7 @@ After configuring all paths properly, simply run:
 python test.py
 ```
 The model will process all weather degradations (rain, snow, haze) automatically in a single pass.
+
+## Results
+### Performance Comparison
+FLASH achieves state-of-the-art performance across three benchmark datasets for adverse weather image restoration. Our method demonstrates consistent superiority over both specialized single-degradation approaches and unified multi-weather restoration methods.
