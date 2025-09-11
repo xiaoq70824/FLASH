@@ -137,19 +137,30 @@ results/              # Restored images (auto-created)
 └── ...
 ```
 
-## Supported Formats
+---
+
+## 🖼️ Supported Formats
+
 Input: .jpg, .png, .bmp, .tiff
-The script automatically handles image resizing and padding for optimal restoration
-## Run Inference
+
+Auto-handling: Image resizing and padding for optimal restoration
+
+---
+
+## ▶️ Run Inference
 After configuring all paths properly, simply run:
 ```bash
 python test.py
 ```
-The model will process all weather degradations (rain, snow, haze) automatically in a single pass.
 
-## Results
-### Performance Comparison
-FLASH achieves state-of-the-art performance across three benchmark datasets for adverse weather image restoration. Our method demonstrates consistent superiority over both specialized single-degradation approaches and unified multi-weather restoration methods.
+🌦️ The model processes all weather degradations (rain, snow, haze) automatically in a single pass.
+
+---
+
+## 📊 Experimental Results
+### 🏆 Performance Comparison
+
+FLASH achieves state-of-the-art performance across three benchmark datasets, demonstrating consistent superiority over both specialized single-degradation approaches and unified multi-weather restoration methods.
 
 | Method | Snow100K (PSNR/SSIM) | Outdoor-rain (PSNR/SSIM) | RESIDE (PSNR/SSIM) | Average (PSNR/SSIM) |
 |--------|----------------------|---------------------------|-------------------|-------------------|
@@ -162,19 +173,21 @@ FLASH achieves state-of-the-art performance across three benchmark datasets for 
 | WGWSNet | 31.03/0.9122 | 27.10/0.8961 | 32.64/0.9841 | 30.26/0.9308 |
 | TANet | 31.06/0.9112 | 27.92/0.8850 | 33.57/0.9822 | 30.85/0.9261 |
 | NAFNet | 30.85/0.9104 | 28.06/0.8836 | 33.79/0.9826 | 30.90/0.9255 |
-| **FLASH (Ours)** | **32.53/0.9284** | **30.06/0.9184** | **37.03/0.9893** | **33.21/0.9454** |
+| **🚀 FLASH (Ours)** | **32.53/0.9284** | **30.06/0.9184** | **37.03/0.9893** | **33.21/0.9454** |
 
-## Key Achievements
-33.21dB average PSNR with 2.31dB improvement over the best baseline method
+### 🎯 Key Achievements
 
-0.9454 average SSIM, demonstrating superior structural similarity preservation
+🏆 33.21dB average PSNR with 2.31dB improvement over best baseline
+📈 0.9454 average SSIM for superior structural similarity preservation
+⚡ Lightweight architecture with only 13M parameters
+🌈 Unified framework handling multiple weather degradations simultaneously
 
-Lightweight architecture with only 13M parameters
+---
 
-Unified framework handling multiple weather degradations (snow, rain, haze) simultaneously
+## 📚 Citation
 
-## Citation
 If you use this code, please cite our paper:
+
 ```bibtex
 @article{zhang2024flash,
   title={FLASH: A Unified Frequency-Domain Framework for All-Weather Image Restoration},
