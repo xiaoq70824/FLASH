@@ -9,14 +9,14 @@ FLASH: A Unified Frequency-Domain Framework for All-Weather Image Restoration
 Adverse weather conditions significantly degrade image quality, affecting visual perception and downstream tasks. Traditional methods often employ fixed frequency decomposition patterns, failing to capture distinct frequency characteristics of different weather degradations. We introduce FLASH, a frequency-domain learning network that achieves unified restoration through two core innovations: the Frequency-Driven Histogram Attention (FDHA) mechanism and the No-Activation Frequency Block (NAFB). FDHA revolutionizes attention computation by utilizing frequency domain magnitude distributions, while NAFB serves as a lightweight backbone eliminating traditional activation functions. Experimental results on three benchmark datasets demonstrate FLASH's superiority, achieving 33.21dB average PSNR with a 2.31dB improvement over baselines, while maintaining computational efficiency with only 13M parameters.
 
 ## Overall architecture
-<img width="4000" height="2240" alt="figure2" src="https://github.com/user-attachments/assets/1591f07a-1a5d-4567-8f89-da0c8ba860dc" />
+<img width="2000" height="1120" alt="figure2" src="https://github.com/user-attachments/assets/1591f07a-1a5d-4567-8f89-da0c8ba860dc" />
 
 Presents the overall architecture of the proposed FLASH network for adverse weather image restoration tasks. The figure illustrates three key components: (a) The complete FLASH architecture employs a U-shaped encoder-decoder design with multiscale feature processing capabilities. The network utilizes NAFB blocks as fundamental building units and integrates FDHA modules at each scale level for frequency domain-guided feature enhancement. Multi-scale auxiliary feature extraction is achieved through progressive downsampling of the original input image, while skip connections facilitate information flow between corresponding levels of the encoder and decoder. (b) The Frequency-Driven Histogram Attention (FDHA) module demonstrates the core innovation of frequency domain-guided feature sorting and dual-branch attention computation. This module processes input features through FFT-based magnitude sorting, followed by parallel BHR and FHR attention calculations, and concludes with cross-attention fusion guided by the original input. (c) The No-Activation Frequency Block (NAFB) presents a lightweight design that eliminates traditional activation functions while maintaining robust feature representation capabilities. The block performs sequential spatial feature extraction through depthwise separable convolution and the SimpleGate mechanism, followed by frequency domain enhancement via the NAFF component. The symbols at the bottom represent concatenation, downsampling, upsampling, element-wise addition, element-wise multiplication, and channel splitting operations, respectively
 
 ## Key Features
 
 ### Core Innovations
-<img width="4000" height="5000" alt="model_1" src="https://github.com/user-attachments/assets/9bb40e78-61b3-464c-8bac-3d481b2292a9" />
+<img width="2000" height="2500" alt="model_1" src="https://github.com/user-attachments/assets/9bb40e78-61b3-464c-8bac-3d481b2292a9" />
 
 
 
