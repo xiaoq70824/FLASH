@@ -24,3 +24,16 @@ FLASH supports multi-GPU distributed training. All training hyperparameters are 
 After setting appropriate hyperparameters, simply run:
 ```bash
 python train.py
+```
+
+## Dataset Structure
+Organize your training and validation datasets as follows:
+```bash
+Your_Dataset/
+├── train/
+│   ├── input/     # Degraded weather images
+│   └── gt/        # Corresponding ground truth clean images
+└── val/
+    ├── input/     # Validation degraded images  
+    └── gt/        # Validation ground truth images
+```
