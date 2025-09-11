@@ -34,6 +34,9 @@ Presents the overall architecture of the proposed FLASH network for adverse weat
     No-Activation Frequency Block (NAFB)
 </div>
 
+- Eliminates traditional activation functions for improved efficiency
+
+- Integrates spatial and frequency domain processing
 
 ## Installation
 ```bash
