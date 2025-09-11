@@ -37,3 +37,15 @@ Your_Dataset/
     ├── input/     # Validation degraded images  
     └── gt/        # Validation ground truth images
 ```
+
+## Dataset Path Configuration
+Update the dataset paths in get_args_parser() method:
+
+--train_dataset_path: Path to your training dataset folder
+--val_dataset_path: Path to your validation dataset folder
+Example:
+```
+parser.add_argument('--train_dataset_path', default='/your/path/to/train/', type=str)
+parser.add_argument('--val_dataset_path', default='/your/path/to/val/', type=str)
+```
+The training script will automatically handle distributed training, checkpointing, loss logging, and metrics calculation.
