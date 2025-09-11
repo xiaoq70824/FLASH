@@ -49,3 +49,46 @@ parser.add_argument('--train_dataset_path', default='/your/path/to/train/', type
 parser.add_argument('--val_dataset_path', default='/your/path/to/val/', type=str)
 ```
 The training script will automatically handle distributed training, checkpointing, loss logging, and metrics calculation.
+
+## Inference
+## Pretrained Weights
+The pretrained model weights are available in the weights/ folder:
+weights/last.pth - Main pretrained model for all-weather image restoration
+## Configuration Setup
+Before running inference, update the paths in test_config dictionary in test.py:
+Required Paths:
+checkpoint_dir: Path to weights folder (default: ./weights)
+checkpoint_file: Weight filename (default: last.pth)
+checkpoint_file: Weight filename (default: last.pth)
+output_dir: Path where restored images will be saved
+Example Configuration:
+```bash
+test_config = {
+    'checkpoint_dir': './weights',
+    'checkpoint_file': 'last.pth',
+    'test_data_dir': '/path/to/your/test/images',
+    'output_dir': './results',
+    # ... other parameters
+}
+```
+## Input/Output Structure
+```bash
+test_images/          # Your degraded images
+├── image1.jpg
+├── image2.png
+└── ...
+
+results/              # Restored images (auto-created)
+├── image1.jpg
+├── image2.png
+└── ...
+```
+## Supported Formats
+Input: .jpg, .png, .bmp, .tiff
+The script automatically handles image resizing and padding for optimal restoration
+## Run Inference
+After configuring all paths properly, simply run:
+```bash
+python test.py
+```
+The model will process all weather degradations (rain, snow, haze) automatically in a single pass.
