@@ -68,18 +68,13 @@ cd FLASH
 pip install -r requirements.txt
 ```
 
-## Training
+## 🎓 Training
 
-### Distributed Training Support
-FLASH supports multi-GPU distributed training. All training hyperparameters are defined in the `get_args_parser()` method in `train.py`. If you need to adjust any settings (learning rate, batch size, number of GPUs, etc.), modify the corresponding parameters in that method.
+### Multi-GPU Support
 
-### Quick Start
-After setting appropriate hyperparameters, simply run:
-```bash
-python train.py
-```
+FLASH supports distributed training with configurable hyperparameters in get_args_parser() method in train.py.
 
-## Dataset Structure
+### Dataset Setup
 Organize your training and validation datasets as follows:
 ```bash
 Your_Dataset/
@@ -91,17 +86,21 @@ Your_Dataset/
     └── gt/        # Validation ground truth images
 ```
 
-## Dataset Path Configuration
-Update the dataset paths in get_args_parser() method:
-
---train_dataset_path: Path to your training dataset folder
---val_dataset_path: Path to your validation dataset folder
-Example:
-```
+### Configuration
+Update dataset paths in get_args_parser():
+```bash
 parser.add_argument('--train_dataset_path', default='/your/path/to/train/', type=str)
 parser.add_argument('--val_dataset_path', default='/your/path/to/val/', type=str)
 ```
-The training script will automatically handle distributed training, checkpointing, loss logging, and metrics calculation.
+
+### Start Training
+```bash
+python train.py
+```
+
+💡 The training script automatically handles distributed training, checkpointing, loss logging, and metrics calculation.
+
+---
 
 ## Inference
 ## Pretrained Weights
