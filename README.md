@@ -31,15 +31,16 @@ Experimental results on three benchmark datasets demonstrate FLASH's superiority
 - 🔄 Dual-branch processing: FHR for local features, BHR for global dependencies  
 - 🎨 Enables precise modeling of different weather degradation patterns
 
-<img width="2000" height="2500" alt="model_1" src="https://github.com/user-attachments/assets/9bb40e78-61b3-464c-8bac-3d481b2292a9" />
-
+#### No-Activation Frequency Block (NAFB)
 <div align="center">
-    No-Activation Frequency Block (NAFB)
+<img width="200" height="250" alt="model_1" src="https://github.com/user-attachments/assets/9bb40e78-61b3-464c-8bac-3d481b2292a9" />
+<p><em>No-Activation Frequency Block design</em></p>
 </div>
 
-- Eliminates traditional activation functions for improved efficiency
+- ⚡ Eliminates traditional activation functions for improved efficiency
+- 🔗 Integrates spatial and frequency domain processing seamlessly
 
-- Integrates spatial and frequency domain processing
+---
 
 ## Overall architecture
 <img width="2000" height="1120" alt="figure2" src="https://github.com/user-attachments/assets/1591f07a-1a5d-4567-8f89-da0c8ba860dc" />
