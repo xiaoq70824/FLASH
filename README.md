@@ -102,28 +102,29 @@ python train.py
 
 ---
 
-## Inference
-## Pretrained Weights
-The pretrained model weights are available in the weights/ folder:
+## 🔮 Inference
+
+### 📥 Pretrained Weights
+
+Download pretrained model weights from the weights/ folder:
+
 weights/last.pth - Main pretrained model for all-weather image restoration
-## Configuration Setup
-Before running inference, update the paths in test_config dictionary in test.py:
-Required Paths:
-checkpoint_dir: Path to weights folder (default: ./weights)
-checkpoint_file: Weight filename (default: last.pth)
-checkpoint_file: Weight filename (default: last.pth)
-output_dir: Path where restored images will be saved
-Example Configuration:
+
+### ⚙️ Configuration Setup
+
+Update paths in test_config dictionary in test.py:
+
 ```bash
 test_config = {
     'checkpoint_dir': './weights',
-    'checkpoint_file': 'last.pth',
+    'checkpoint_file': 'last.pth', 
     'test_data_dir': '/path/to/your/test/images',
     'output_dir': './results',
     # ... other parameters
 }
 ```
-## Input/Output Structure
+### 📁 Directory Structure
+
 ```bash
 test_images/          # Your degraded images
 ├── image1.jpg
@@ -135,6 +136,7 @@ results/              # Restored images (auto-created)
 ├── image2.png
 └── ...
 ```
+
 ## Supported Formats
 Input: .jpg, .png, .bmp, .tiff
 The script automatically handles image resizing and padding for optimal restoration
