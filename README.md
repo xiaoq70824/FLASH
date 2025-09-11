@@ -42,12 +42,22 @@ Experimental results on three benchmark datasets demonstrate FLASH's superiority
 
 ---
 
-## Overall architecture
-<img width="2000" height="1120" alt="figure2" src="https://github.com/user-attachments/assets/1591f07a-1a5d-4567-8f89-da0c8ba860dc" />
+## 🏗️ Overall Architecture
+<div align="center">
+<img width="400" height="224" alt="figure2" src="https://github.com/user-attachments/assets/1591f07a-1a5d-4567-8f89-da0c8ba860dc" />
+</div>
 
-Presents the overall architecture of the proposed FLASH network for adverse weather image restoration tasks. The figure illustrates three key components: (a) The complete FLASH architecture employs a U-shaped encoder-decoder design with multiscale feature processing capabilities. The network utilizes NAFB blocks as fundamental building units and integrates FDHA modules at each scale level for frequency domain-guided feature enhancement. Multi-scale auxiliary feature extraction is achieved through progressive downsampling of the original input image, while skip connections facilitate information flow between corresponding levels of the encoder and decoder. (b) The Frequency-Driven Histogram Attention (FDHA) module demonstrates the core innovation of frequency domain-guided feature sorting and dual-branch attention computation. This module processes input features through FFT-based magnitude sorting, followed by parallel BHR and FHR attention calculations, and concludes with cross-attention fusion guided by the original input. (c) The No-Activation Frequency Block (NAFB) presents a lightweight design that eliminates traditional activation functions while maintaining robust feature representation capabilities. The block performs sequential spatial feature extraction through depthwise separable convolution and the SimpleGate mechanism, followed by frequency domain enhancement via the NAFF component. The symbols at the bottom represent concatenation, downsampling, upsampling, element-wise addition, element-wise multiplication, and channel splitting operations, respectively
+The figure presents the overall architecture of the proposed FLASH network for adverse weather image restoration tasks, illustrating three key components:
 
+### 🔧 Architecture Components
 
+**🏛️ Complete FLASH Architecture (a)**: Employs a U-shaped encoder-decoder design with multiscale feature processing capabilities. The network utilizes NAFB blocks as fundamental building units and integrates FDHA modules at each scale level for frequency domain-guided feature enhancement.
+
+**🎯 Frequency-Driven Histogram Attention (b)**: Demonstrates the core innovation of frequency domain-guided feature sorting and dual-branch attention computation through FFT-based magnitude sorting, followed by parallel BHR and FHR attention calculations.
+
+**⚡ No-Activation Frequency Block (c)**: Presents a lightweight design that eliminates traditional activation functions while maintaining robust feature representation capabilities through depthwise separable convolution and the SimpleGate mechanism.
+
+---
 
 ## Installation
 ```bash
