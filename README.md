@@ -126,3 +126,16 @@ The model will process all weather degradations (rain, snow, haze) automatically
 ## Results
 ### Performance Comparison
 FLASH achieves state-of-the-art performance across three benchmark datasets for adverse weather image restoration. Our method demonstrates consistent superiority over both specialized single-degradation approaches and unified multi-weather restoration methods.
+
+| Method | Snow100K (PSNR/SSIM) | Outdoor-rain (PSNR/SSIM) | RESIDE (PSNR/SSIM) | Average (PSNR/SSIM) |
+|--------|----------------------|---------------------------|-------------------|-------------------|
+| **Specialized Methods** | | | | |
+| URDRN | - | 29.62/0.9151 | - | 29.62/0.9151 |
+| FSADNet | - | - | 29.96/0.9685 | 29.96/0.9685 |
+| LMQFormer | 28.41/0.8762 | - | - | 28.41/0.8762 |
+| **Unified Methods** | | | | |
+| FocalNet | 30.90/0.9118 | 27.12/0.8858 | 32.16/0.9811 | 30.06/0.9263 |
+| WGWSNet | 31.03/0.9122 | 27.10/0.8961 | 32.64/0.9841 | 30.26/0.9308 |
+| TANet | 31.06/0.9112 | 27.92/0.8850 | 33.57/0.9822 | 30.85/0.9261 |
+| NAFNet | 30.85/0.9104 | 28.06/0.8836 | 33.79/0.9826 | 30.90/0.9255 |
+| **FLASH (Ours)** | **32.53/0.9284** | **30.06/0.9184** | **37.03/0.9893** | **33.21/0.9454** |
