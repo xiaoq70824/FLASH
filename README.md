@@ -59,7 +59,9 @@ The figure presents the overall architecture of the proposed FLASH network for a
 
 ---
 
-## Installation
+## 🚀 Getting Started
+
+### 📦 Installation
 ```bash
 git clone https://github.com/xiaoq70824/FLASH.git
 cd FLASH
