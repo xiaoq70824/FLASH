@@ -16,6 +16,9 @@ Presents the overall architecture of the proposed FLASH network for adverse weat
 ## Key Features
 
 ### Core Innovations
+<img width="8031" height="9921" alt="model_1" src="https://github.com/user-attachments/assets/9bb40e78-61b3-464c-8bac-3d481b2292a9" />
+
+
 
 ## Installation
 ```bash
