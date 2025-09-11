@@ -178,8 +178,11 @@ FLASH achieves state-of-the-art performance across three benchmark datasets, dem
 ### 🎯 Key Achievements
 
 🏆 33.21dB average PSNR with 2.31dB improvement over best baseline
+
 📈 0.9454 average SSIM for superior structural similarity preservation
+
 ⚡ Lightweight architecture with only 13M parameters
+
 🌈 Unified framework handling multiple weather degradations simultaneously
 
 ---
