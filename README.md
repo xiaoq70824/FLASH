@@ -147,6 +147,18 @@ FLASH achieves state-of-the-art performance across three benchmark datasets for 
 
 0.9454 average SSIM, demonstrating superior structural similarity preservation
 
+## Citation
+If you use this code, please cite our paper:
+```bibtex
+@article{zhang2024flash,
+  title={FLASH: A Unified Frequency-Domain Framework for All-Weather Image Restoration},
+  author={Zhang, Xinsheng and Feng, Siyuan},
+  journal={The Visual Computer},
+  year={2024},
+  note={Under review}
+}
+```
+
 Lightweight architecture with only 13M parameters
 
 Unified framework handling multiple weather degradations (snow, rain, haze) simultaneously
