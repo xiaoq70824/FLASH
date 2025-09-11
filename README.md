@@ -17,7 +17,9 @@ Presents the overall architecture of the proposed FLASH network for adverse weat
 
 ### Core Innovations
 <img width="2000" height="2500" alt="model_1" src="https://github.com/user-attachments/assets/9bb40e78-61b3-464c-8bac-3d481b2292a9" />
-**Frequency-Driven Histogram Attention (FDHA)**
+<div align="center">
+    Frequency-Driven Histogram Attention (FDHA)
+</div>
 
 - Replaces pixel intensity grouping with frequency domain magnitude distributions
 
