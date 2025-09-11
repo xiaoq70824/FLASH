@@ -1,6 +1,8 @@
 # FLASH
 FLASH: A Unified Frequency-Domain Framework for All-Weather Image Restoration
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17098611.svg)](https://doi.org/10.5281/zenodo.17098611)
+
 🔗 **Related Publication**: This code is directly related to our manuscript submitted to *The Visual Computer* journal.
 
 ⚠️ **Please cite our paper if you use this code.**
