@@ -44,7 +44,7 @@ Experimental results on three benchmark datasets demonstrate FLASH's superiority
 
 ## 🏗️ Overall Architecture
 <div align="center">
-<img width="400" height="224" alt="figure2" src="https://github.com/user-attachments/assets/1591f07a-1a5d-4567-8f89-da0c8ba860dc" />
+<img width="800" height="448" alt="figure2" src="https://github.com/user-attachments/assets/1591f07a-1a5d-4567-8f89-da0c8ba860dc" />
 </div>
 
 The figure presents the overall architecture of the proposed FLASH network for adverse weather image restoration tasks, illustrating three key components:
