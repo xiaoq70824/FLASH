@@ -139,3 +139,12 @@ FLASH achieves state-of-the-art performance across three benchmark datasets for 
 | TANet | 31.06/0.9112 | 27.92/0.8850 | 33.57/0.9822 | 30.85/0.9261 |
 | NAFNet | 30.85/0.9104 | 28.06/0.8836 | 33.79/0.9826 | 30.90/0.9255 |
 | **FLASH (Ours)** | **32.53/0.9284** | **30.06/0.9184** | **37.03/0.9893** | **33.21/0.9454** |
+
+## Key Achievements
+33.21dB average PSNR with 2.31dB improvement over the best baseline method
+
+0.9454 average SSIM, demonstrating superior structural similarity preservation
+
+Lightweight architecture with only 13M parameters
+
+Unified framework handling multiple weather degradations (snow, rain, haze) simultaneously
