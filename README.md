@@ -23,7 +23,7 @@ Experimental results on three benchmark datasets demonstrate FLASH's superiority
 
 #### Frequency-Driven Histogram Attention (FDHA)
 <div align="center">
-<img width="190" height="413" alt="model_2" src="https://github.com/user-attachments/assets/6476828e-cc5d-4473-86e4-200bacc3aa66" />
+<img width="4000" height="800" alt="model_2" src="https://github.com/user-attachments/assets/6476828e-cc5d-4473-86e4-200bacc3aa66" />
 <p><em>Frequency-Driven Histogram Attention mechanism</em></p>
 </div>
 
