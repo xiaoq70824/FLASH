@@ -13,3 +13,13 @@ Adverse weather conditions significantly degrade image quality, affecting visual
 git clone https://github.com/xiaoq70824/FLASH.git
 cd FLASH
 pip install -r requirements.txt
+
+## Training
+
+### Distributed Training Support
+FLASH supports multi-GPU distributed training. All training hyperparameters are defined in the `get_args_parser()` method in `train.py`. If you need to adjust any settings (learning rate, batch size, number of GPUs, etc.), modify the corresponding parameters in that method.
+
+### Quick Start
+After setting appropriate hyperparameters, simply run:
+```bash
+python train.py
