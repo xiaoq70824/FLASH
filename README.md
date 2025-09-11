@@ -16,7 +16,8 @@ Presents the overall architecture of the proposed FLASH network for adverse weat
 ## Key Features
 
 ### Core Innovations
-<img width="2000" height="2500" alt="model_1" src="https://github.com/user-attachments/assets/9bb40e78-61b3-464c-8bac-3d481b2292a9" />
+<img width="1900" height="4134" alt="model_2" src="https://github.com/user-attachments/assets/6476828e-cc5d-4473-86e4-200bacc3aa66" />
+
 <div align="center">
     Frequency-Driven Histogram Attention (FDHA)
 </div>
@@ -26,6 +27,13 @@ Presents the overall architecture of the proposed FLASH network for adverse weat
 - Dual-branch processing: FHR for local features, BHR for global dependencies
 
 - Enables precise modeling of different weather degradation patterns
+
+<img width="2000" height="2500" alt="model_1" src="https://github.com/user-attachments/assets/9bb40e78-61b3-464c-8bac-3d481b2292a9" />
+
+<div align="center">
+    No-Activation Frequency Block (NAFB)
+</div>
+
 
 ## Installation
 ```bash
