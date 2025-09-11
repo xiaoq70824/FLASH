@@ -147,6 +147,10 @@ FLASH achieves state-of-the-art performance across three benchmark datasets for 
 
 0.9454 average SSIM, demonstrating superior structural similarity preservation
 
+Lightweight architecture with only 13M parameters
+
+Unified framework handling multiple weather degradations (snow, rain, haze) simultaneously
+
 ## Citation
 If you use this code, please cite our paper:
 ```bibtex
@@ -158,7 +162,3 @@ If you use this code, please cite our paper:
   note={Under review}
 }
 ```
-
-Lightweight architecture with only 13M parameters
-
-Unified framework handling multiple weather degradations (snow, rain, haze) simultaneously
