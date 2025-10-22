@@ -195,7 +195,7 @@ If you use this code, please cite our paper:
 @article{zhang2024flash,
   title={FLASH: A Unified Frequency-Domain Framework for All-Weather Image Restoration},
   author={Zhang, Xinsheng and Feng, Siyuan},
-  journal={The Visual Computer},
+  journal={MULTIMEDIA SYSTEMS},
   year={2024},
   note={Under review}
 }
